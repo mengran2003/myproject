@@ -1,0 +1,165 @@
+* {
+    border: 0px;
+    padding: 0px;
+    font-size: 100%;
+    margin: 0px;
+    font-family: inherit;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-weight: normal;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    border-top: 2px solid #00a44e;
+    width: 1530px;
+    height: 750px;
+
+}
+
+/* 动画 */
+
+@keyframes movie {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    20% {
+        top: 600px;
+        left: 560px;
+    }
+
+    40% {
+        top: 0;
+        left: 1000px;
+    }
+
+    60% {
+        left: 1180px;
+        top: 160px;
+    }
+
+    80% {
+        top: 600px;
+        left: 580px;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+/* .box {
+    position: fixed;
+    width: 1530px;
+    height: 750px;
+} */
+
+.move {
+    height: 170px;
+    width: 320px;
+    position: relative;
+    animation-name: movie;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 5;
+    text-align: right;
+    opacity: 1;
+}
+
+.move-img img {
+    height: 150px;
+    width: 320px;
+}
+
+.move span {
+    font-size: x-small;
+    background-color: white;
+    color: black;
+}
+
+.move span:hover {
+    opacity: 0;
+}
+
+.move span:hover .move-img {
+    opacity: 0;
+}
+
+.top {
+    height: 166px;
+
+}
+
+nav {
+    height: 61px;
+    background-color: #00a44e;
+    display: flex;
+    padding: 0 124px;
+}
+
+nav ul>li {
+    height: 61px;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-ul li {
+    text-align: center;
+    height: 61px;
+}
+
+.nav-list {
+    width: 124px;
+    height: 61px;
+    overflow: hidden;
+    transition: all 1s;
+
+
+}
+
+/* .nav-list ul {
+    margin-top: 30px;
+} */
+.nav ul {
+    display: flex;
+    width: 124px;
+
+}
+
+.nav-list ul>li {
+    height: 61px;
+    padding: 15px 0;
+
+}
+
+
+
+.nav-list a {
+    color: white;
+    /* line-height: 61px; */
+}
+
+.nav-list:hover {
+    height: 500px;
+}
+
+.nav-list:hover ul>li {
+    background-color: rgba(0, 0, 0, 0.5);
+}
